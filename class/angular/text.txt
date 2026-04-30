@@ -1,0 +1,93 @@
+
+angular = freamwork
+develop = google
+what is SPA = single page appliction
+node -v
+npm p
+cli commont initiali
+
+package.json - is a comfiguration file info about your project 
+packge. lock.json - detail info
+angular.json- project comfiguration
+style.css - globle css style
+.gitignore - version control file
+.editorconfig- edit vs code 
+indx.html- main html file
+main.ts- entry point of the app
+app.config.ts-app config file
+
+
+datatype primitive =string number 
+
+compontant is a UI block of structure when we create component create 4 file html,css,ts,spec.ts
+componat create
+ng = angular
+g = general
+c = component
+componat name
+
+data binding=  = there are 2 types of  data binding
+one-way
+two-way
+conect ui 
+
+ one way -there are 3 types of  data binding
+interpolution {{value}}
+property  [property]="value"
+event {event}="handler()"
+
+two way = [(ngmodel)]="value"=>sync data
+ngmodel
+
+
+
+
+
+
+
+
+
+
+type of directive
+
+structure = change the structure of your page add remove repeted 
+change the loop and style
+
+attribute
+
+activity 1 deep study about directive structure
+with for switch if else example
+
+exp 8
+ creating studentmanagement 
+ interpolution
+ property binding example
+ two way
+ click event
+ directives
+
+
+
+ modules
+ before angular 15 needs modules now a day we are use angular 21 version so modules are optional 
+ before angular 
+ we can use standalone components
+
+ sevices
+ what is sevices
+ a sevicesis like a helper class it is use store a data or share logic that many componas 
+ are used insted of writing same code in every components we can write it once in service
+
+ commont ng g s service_name
+
+
+
+
+ routing
+ navigation between one page to another 
+
+
+
+ routing activity
+ 
+

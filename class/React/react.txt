@@ -1,0 +1,68 @@
+React is a js library developed by Meta to build a fast & interactive user Interface.
+
+//activity 
+1. diff betwn react and angular
+
+less number of files compared to angular
+
+React is also a SPA
+was developed  to solve facebook pb- msg icons numbers were not updated even after seeing it. 
+
+// why we use react
+=> pb with js :
+complex dom manupultion
+full pg reload
+hard to manage large apps
+
+soln :
+updates only req parts with react
+uses reusable components
+SPA - single page app - ex insta , fb - pg does not reload , only content changes
+
+//virtual dom
+=> React creates a copy of real dom which is called virtual dom.
+When data changes react updates virtual dom, updates only chnged part in real dom.
+result = high performance
+
+// tool installation
+npm, node.js, vs code
+
+//cmd
+npx new react app //old
+npm -node package manager => npm create vite@latest StudentApp // new
+
+vite => fast build tool
+run cmd => npm run dev
+
+//important files
+1. index.jsx = entry html files
+2. main.jsx = entry file of react
+3. app.jsx = root component ->/ reusable ui parts
+
+//jsx => javascript + html
+It allows to write html code inside javascript code
+syntax =>
+const element = <h1> Welcome ! </h1>
+
+rules :
+1. must return single parent
+2. use scope brackets for js
+
+//component - heart of react
+src -> right click -> new file -> file name -> dept.jsx
+
+There are 2 types of components:
+
+1. Functional components
+=> function Student(){
+
+}
+// need to give this path to app.jsx
+
+// A function can return only once  , after the 1st return the 2nd return is never executed
+return {
+    // whatevr needs to be returned must be written inside this
+}
+
+//Props - properties 
+=> data pass from parent(app.jsx) to child (any component)

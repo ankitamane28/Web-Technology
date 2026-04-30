@@ -1,0 +1,47 @@
+what is events ?
+it is an action that happen in the browser ex., clicking button, moving mouse, pressing key, submitting form, loading page,
+javascript detects these events and respond to them by executing a function, this is called event handling.
+
+three types of events
+1) mouse events
+2) keyboard events
+3) browser events
+
+1) mouse events
+- click: when an element is clicked
+- dblclick: when an element is double clicked
+- mouseover: when the mouse pointer is moved over an element
+- mouseout: when the mouse pointer is moved out of an element
+- mousedown: when the mouse button is pressed down on an element
+- mouseup: when the mouse button is released over an element
+
+2) keyboard events
+- keydown: when a key is pressed down
+- keyup: when a key is released
+- keypress: when a key is pressed and released
+
+3) browser events => load, resize, scroll
+- load: when the page has finished loading
+- unload: when the page is unloaded
+- resize: when the browser window is resized
+- scroll: when the user scrolls the page
+- focus: when an element gains focus
+- blur: when an element loses focus
+- change: when the value of an input element changes
+- submit: when a form is submitted
+- reset: when a form is reset
+- error: when an error occurs while loading an element (like an image)
+
+<img id="japan"
+    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    alt="Mount Fuji"
+    onclick="alert('hi')" 
+>
+this is not good way. html should contain content and JS contain logic and mixing both bad practice.
+
+
+//home => 
+1) use of jquery, type, timestamp, default prevent, target, source element, client x, client y, alt key, ctrl key, shilft key
+2) on click image it should be removed and on refresh it should be again displayed
+
+addEventListener = it is JS method, used to attach an event handler to an html element so that specific function event runs when particular event occurs

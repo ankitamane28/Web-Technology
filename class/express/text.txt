@@ -1,0 +1,35 @@
+--what is express in js?
+express use for backend
+express is a minimal and flexible web application freamwork for node js
+that simplefies the development of web servers and api's
+
+what need express node js?
+use complected and large application
+
+--express features
+rounting middul were support requset and responce handling ,rest api creation
+templete rendering
+
+npm - node packge manager
+
+activity
+what is packge.json -- component
+different bet packge.js packge log json
+dev depndency and dependacy
+http requset like get 
+
+
+rounting in express js
+rounting referce to detemining how an application responce to cilent
+request for  a specific url and http methods.(/)
+
+activity 3 
+
+
+component of rounting url path http methodes handler function
+
+create the file node model and packge.lock-json
+
+
+middlewer--- function are function that excutes during the life cylce od request 
+before sending the final response than have access to request response and next

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji"
+                >
+                <!-- this is not good way. html should contain content and JS contain logic and mixing both bad practice. -->
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>
+    document.getElementById('Nature').onclick = function() {
+        alert('nature image clicked');
+    }
+    // select Element
+    // assign function to event
+    // event handler
+
+    document.getElementById('photoshop').addEventListener('click', function(e) {
+        console.log(e);
+    });
+    document.getElementById('images').addEventListener('click', function() {
+        console.log('clicking inside the ul');
+    }, true);
+    document.getElementById('photoman').addEventListener('click', function() {
+        console.log('clicking photoman image');
+    }, true);
+    // Delegated handler: remove any clicked image (removal is in-memory only,
+    // so on page refresh the images will reappear)
+    document.getElementById('images').addEventListener('click', function(e) {
+        const img = e.target.closest('img');
+        if (img && this.contains(img)) {
+            img.remove();
+        }
+    });
+    // event propagation => event bubbling and event capturing
+    //event bubbling => event propagates (order is) from child to parent, inner element to the parent element parent to the document if photoman imgae is clicked then event will first trigger on photoman image and then on ul and then on document
+    //event capturing => event propagates (order is) from parent to child, document to the inner element if photoman image is clicked then event will first trigger on document and then on ul and then on photoman image
+
+    document.getElementById('google').addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('google link clicked');
+    });
+  </script>
+  </html>
