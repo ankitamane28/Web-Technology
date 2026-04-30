@@ -1,0 +1,6 @@
+angular = freamwork
+develop = google
+what is SPA = single page appliction
+node -v
+npm p
+cli commont initiali
